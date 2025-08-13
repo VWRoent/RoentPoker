@@ -1,4 +1,3 @@
-````markdown
 # レントポーカー
 Ver. 1.0.13
 roent_porker_gpt5_v1-0-13.py
@@ -371,3 +370,4 @@ Changes were made.
 ```
 
 ---
+
