@@ -185,10 +185,8 @@ Changes were made.
 
 人生で関わった方すべてに感謝しています。
 
-````
 
 
-**README_EN.md**
 # Roent Porker
 Ver. 1.0.13
 roent_porker_gpt5_v1-0-13
@@ -369,5 +367,6 @@ Changes were made.
 ```
 
 ---
+
 
 
