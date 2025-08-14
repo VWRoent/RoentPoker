@@ -2,10 +2,11 @@
 Ver. 1.0.13 (roent_poker_gpt5_v1-0-13.py)
 
 > 6-max（最大 10 人）対応のノーリミット・テキサスホールデム自動対戦＆学習エンジンです。  
-> **Python 標準ライブラリのみ**で動作します（追加依存なし）。
-> 現在製作段階でCUIのみで動きます。エラーやルール違反があれば教えていただけると助かります。
+> CUIは**Python 標準ライブラリのみ**で動作します（追加依存なし）。
+> GUIの.exeはWindowsのみで動作します。.pyはdearpygui>=1.11を要求します (pip install dearpygui)
+> エラーやルール違反があれば教えていcｃただけると助かります。（チップが減ってもポットから返却されるとWinnerとなるバグあり）
 > Ver. 1.0.13時点ではコメントアウトと変数の値変更以外ノーコードでChatGPT5 Thinkingで作成しました。
-> 多機能化やGUI化は今後配信で行いたいと思っています。
+> ChatGPTを用いた多機能化は今後配信で行いたいと思っています。
 
 - **プリフロップ**：世界のヨコサワのハンドレンジ表を**参考にした初期ポリシー**（オープン / 3bet / コール / フォールド）
 - **ポストフロップ**：役クラス（High Card〜Straight Flush）＋未完成役（フラッシュドロー / OESD / ガットショット）で**アクションとベットサイズ**を決定
@@ -27,7 +28,9 @@ Ver. 1.0.13 (roent_poker_gpt5_v1-0-13.py)
 
 - **`roent_poker_gpt5_v1-0-13.py`** … 学習用メインエンジン  （例：2000 ハンド、Player1~6=AI）
 - **`play_roent_poker_gpt5_v1-0-13.py`** … プレイ用の最小スクリプト（例：200 ハンド、Player1=人間、Player2~6=AI）
-
+- **`gui_roent_poker_v1-0-11.py`** … プレイ用のGUIスクリプト（標準はPlayerモード、ハンド終了時のみモード変更が可能）
+- **`RoentPokerGUI.exe`** … Windows用のGUI実行ファイル（単独で実行可能、同じ階層にディレクトリが生成されるので要注意）
+- 
 ---
 
 ## セットアップ
@@ -279,6 +282,7 @@ Changes were made.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
 ---
+
 
 
 
