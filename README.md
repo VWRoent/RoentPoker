@@ -77,6 +77,9 @@ python play_roent_porker_gpt5_v1-0-13.py
 * `logs/end_preflop.log` / `end_flop.log` / `end_turn.log` / `end_river.log` … 終了ストリート別
 * `logs/allin.log` … オールインが発生したハンドのみ
 
+<img width="907" height="301" alt="image" src="https://github.com/user-attachments/assets/ba57a2e7-807d-4d47-9559-64108e809c6a" />
+
+
 ### JSON ログ（観測）
 
 * `logs/player_?.jsonl` … 各プレイヤー視点の状態スナップショット
@@ -277,6 +280,7 @@ Changes were made.
 ```
 
 ---
+
 
 
 
