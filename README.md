@@ -33,7 +33,7 @@ Ver. 1.0.13 (roent_poker_gpt5_v1-0-13.py)
 
 ---
 
-## .exeファイルの実行動画
+## GUIの実行動画
 
 ### AI自動モード
 
@@ -67,6 +67,13 @@ python roent_poker_gpt5_v1-0-13.py
 
 ```bash
 python play_roent_poker_gpt5_v1-0-13.py
+```
+
+### GUIモード (AI、プレイヤー)
+
+```bash
+pip install dearpygui
+python gui_roent_poker_v1-0-11.py
 ```
 
 ---
@@ -295,6 +302,7 @@ Changes were made.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
 ---
+
 
 
 
