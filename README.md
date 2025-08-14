@@ -77,8 +77,7 @@ python play_roent_porker_gpt5_v1-0-13.py
 * `logs/end_preflop.log` / `end_flop.log` / `end_turn.log` / `end_river.log` … 終了ストリート別
 * `logs/allin.log` … オールインが発生したハンドのみ
 
-<img width="907" height="301" alt="image" src="https://github.com/user-attachments/assets/ba57a2e7-807d-4d47-9559-64108e809c6a" />
-
+<img width="901" height="301" alt="image" src="https://github.com/user-attachments/assets/60e42941-cd86-46c4-b45e-14936048c69c" />
 
 ### JSON ログ（観測）
 
@@ -223,6 +222,8 @@ python play_roent_porker_gpt5_v1-0-13.py
 * `logs/end_preflop.log`, `end_flop.log`, `end_turn.log`, `end_river.log` — grouped by the ending street
 * `logs/allin.log` — hands with an all-in
 
+<img width="901" height="301" alt="image" src="https://github.com/user-attachments/assets/2ac6f904-ffe2-4efc-aebb-537f838c6082" />
+
 ### JSON snapshots
 
 * `logs/player_?.jsonl` — per-player observations
@@ -280,6 +281,7 @@ Changes were made.
 ```
 
 ---
+
 
 
 
