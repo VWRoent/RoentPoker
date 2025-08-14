@@ -261,7 +261,7 @@ Licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Inter
 
 ```
 This project builds on “Roent Porker” (CC BY-NC-SA 4.0).
-Copyright (c) 2025 Roent Shiba / 紫波レント.
+Copyright (c) 2025 Roent Shiba.
 Changes were made.
 ```
 
@@ -278,9 +278,8 @@ Changes were made.
 * Thanks to **ChatGPT 5 Thinking**.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
-```
-
 ---
+
 
 
 
