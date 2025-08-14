@@ -35,6 +35,13 @@ Ver. 1.0.13 (roent_poker_gpt5_v1-0-13.py)
 
 ## .exeファイルの実行動画
 
+### AI自動モード
+
+https://github.com/user-attachments/assets/fb8c2303-5cf3-4396-bc11-e494ea370b78
+
+### プレイヤーモード
+
+https://github.com/user-attachments/assets/cdb5e170-4cd9-4567-a31a-993ad675a837
 
 ---
 
@@ -56,7 +63,7 @@ python roent_poker_gpt5_v1-0-13.py
 
 初回で `logs/` と `postai/` を作成。以降は過去の学習結果から再開します。**Player1 は直近勝者のポリシー**を優先ロード。
 
-### 対人プレイ (CUI)
+### プレイヤーモード (CUI)
 
 ```bash
 python play_roent_poker_gpt5_v1-0-13.py
@@ -288,6 +295,7 @@ Changes were made.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
 ---
+
 
 
 
