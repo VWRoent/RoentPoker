@@ -100,12 +100,6 @@ python play_roent_porker_gpt5_v1-0-13.py
 
 <img width="696" height="698" alt="image" src="https://github.com/user-attachments/assets/b41643fb-0e54-40ee-8284-d4918b86ce16" />
 
-**集計ルール（winner 用）**
-
-* **ハンド最初の判断が fold** の場合：**敗北にも total にも数えない**
-* **一度でも参加（call/raise 等）後に fold**：**敗北**として **total に加算**
-
-What-if の勝者（全員フォールドなし / フロップ以降フォールドなし）も、実行ごと＋累積に保存します。
 
 ---
 
@@ -258,13 +252,6 @@ python play_roent_porker_gpt5_v1-0-13.py
 
 * `logs/player_?.jsonl` — per-player observations
 
-**Winner counting rules**
-
-* If the **very first decision** is `fold`: **do not** count as a loss, and **do not** add to `total`.
-* If the player **ever participated** (e.g., call/raise) and **later folded**: count as a **loss** and increase `total`.
-
-What-if winners (no-folds / flop-no-more-folds) are also saved per-run and cumulatively.
-
 ---
 
 ## Blind levels (1–10)
@@ -318,6 +305,7 @@ Changes were made.
 ```
 
 ---
+
 
 
 
