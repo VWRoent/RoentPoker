@@ -1,5 +1,5 @@
 # レントポーカー
-Ver. 1.0.13 (roent_porker_gpt5_v1-0-13.py)
+Ver. 1.0.13 (roent_poker_gpt5_v1-0-13.py)
 
 > 6-max（最大 10 人）対応のノーリミット・テキサスホールデム自動対戦＆学習エンジンです。  
 > **Python 標準ライブラリのみ**で動作します（追加依存なし）。
@@ -25,8 +25,8 @@ Ver. 1.0.13 (roent_porker_gpt5_v1-0-13.py)
 
 ## 構成
 
-- **`roent_porker_gpt5_v1-0-13.py`** … 学習用メインエンジン  （例：2000 ハンド、Player1~6=AI）
-- **`play_roent_porker_gpt5_v1-0-13.py`** … プレイ用の最小スクリプト（例：200 ハンド、Player1=人間、Player2~6=AI）
+- **`roent_poker_gpt5_v1-0-13.py`** … 学習用メインエンジン  （例：2000 ハンド、Player1~6=AI）
+- **`play_roent_poker_gpt5_v1-0-13.py`** … プレイ用の最小スクリプト（例：200 ハンド、Player1=人間、Player2~6=AI）
 
 ---
 
@@ -42,7 +42,7 @@ Ver. 1.0.13 (roent_porker_gpt5_v1-0-13.py)
 ### 学習実行
 
 ```bash
-python roent_porker_gpt5_v1-0-13.py
+python roent_poker_gpt5_v1-0-13.py
 ```
 
 初回で `logs/` と `postai/` を作成。以降は過去の学習結果から再開します。**Player1 は直近勝者のポリシー**を優先ロード。
@@ -50,7 +50,7 @@ python roent_porker_gpt5_v1-0-13.py
 ### 対人プレイ
 
 ```bash
-python play_roent_porker_gpt5_v1-0-13.py
+python play_roent_poker_gpt5_v1-0-13.py
 ```
 
 ---
@@ -120,7 +120,7 @@ python play_roent_porker_gpt5_v1-0-13.py
 **クレジット例**：
 
 ```
-This project builds on “roent_porker_gpt5_v1-0-13” (CC BY-NC-SA 4.0).
+This project builds on “roent_poker_gpt5_v1-0-13” (CC BY-NC-SA 4.0).
 Copyright (c) 2025 紫波レント / Roent Shiba.
 Changes were made.
 ```
@@ -145,9 +145,9 @@ Changes were made.
 
 
 
-# Roent Porker
+# Roent Poker
 Ver. 1.0.13
-roent_porker_gpt5_v1-0-13
+roentpoker_gpt5_v1-0-13
 
 A 6-max (up to 10 players) No-Limit Texas Hold’em engine with **self-play learning** and a **human console**.  
 It runs with **Python standard library only** (no external dependencies).
@@ -169,8 +169,8 @@ It runs with **Python standard library only** (no external dependencies).
 
 ## Files
 
-- **`roent_porker_gpt5_v1-0-13.py`** — main learning engine  
-- **`play_roent_porker_gpt5_v1-0-13.py`** — minimal play script (e.g., 200 hands, Player1 = human)
+- **`roent_poker_gpt5_v1-0-13.py`** — main learning engine  
+- **`play_roent_poker_gpt5_v1-0-13.py`** — minimal play script (e.g., 200 hands, Player1 = human)
 
 
 ---
@@ -260,7 +260,7 @@ Licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Inter
 **Attribution example**:
 
 ```
-This project builds on “Roent Porker” (CC BY-NC-SA 4.0).
+This project builds on “Roent Poker” (CC BY-NC-SA 4.0).
 Copyright (c) 2025 Roent Shiba.
 Changes were made.
 ```
@@ -279,6 +279,7 @@ Changes were made.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
 ---
+
 
 
 
