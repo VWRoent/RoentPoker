@@ -25,23 +25,8 @@ Ver. 1.0.13 (roent_porker_gpt5_v1-0-13.py)
 
 ## 構成
 
-- **`roent_porker_gpt5_v1-0-13.py`** … 学習用メインエンジン  
-- **`play_roent_porker_gpt5_v1-0-13.py`** … プレイ用の最小スクリプト（例：200 ハンド、Player1=人間）
-
-### 最小プレイスクリプト例
-```python
-# play_roent_porker_gpt5_v1-0-13.py
-from roent_porker_gpt5_v1-0-13 import Game
-
-if __name__ == "__main__":
-    Game(
-        num_players=6,
-        starting_stack=300,
-        sb=1, bb=3,
-        human_ids={1},      # Player1 を人間操作に
-        max_rebuys=2
-    ).run(200)
-````
+- **`roent_porker_gpt5_v1-0-13.py`** … 学習用メインエンジン  （例：2000 ハンド、Player1~6=AI）
+- **`play_roent_porker_gpt5_v1-0-13.py`** … プレイ用の最小スクリプト（例：200 ハンド、Player1=人間、Player2~6=AI）
 
 ---
 
@@ -185,19 +170,6 @@ It runs with **Python standard library only** (no external dependencies).
 - **`roent_porker_gpt5_v1-0-13.py`** — main learning engine  
 - **`play_roent_porker_gpt5_v1-0-13.py`** — minimal play script (e.g., 200 hands, Player1 = human)
 
-### Minimal play script
-```python
-from roent_porker_gpt5_v1-0-13 import Game
-
-if __name__ == "__main__":
-    Game(
-        num_players=6,
-        starting_stack=300,
-        sb=1, bb=3,
-        human_ids={1},          # Player 1 is human
-        max_rebuys=2
-    ).run(200)
-````
 
 ---
 
@@ -305,6 +277,7 @@ Changes were made.
 ```
 
 ---
+
 
 
 
