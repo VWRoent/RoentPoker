@@ -96,31 +96,9 @@ python play_roent_porker_gpt5_v1-0-13.py
 
 * `logs/player_?.jsonl` … 各プレイヤー視点の状態スナップショット
 
-### CSV（ハンド別：AA / AKo / 88 / 72s …）
+### ハンドの勝率ログ
 
-フォルダ構成：
-
-```
-logs/
-  stats/
-    run_{yyyyMMddHHmmss}/
-      all_dealt.csv
-      flop_players.csv
-      winner.csv
-    cumulative/
-      all_dealt.csv
-      flop_players.csv
-      winner.csv
-    player_no/
-      p01/
-        all_dealt/      # 参加人数ごと 2..10.csv
-        flop_players/   # フロップ残り人数ごと 2..10.csv
-        winner/         # 参加人数ごと 2..10.csv
-      p02/
-        ...
-```
-
-各 CSV 列：`hand, wins, ties, losses, total, win_rate`
+<img width="696" height="698" alt="image" src="https://github.com/user-attachments/assets/b41643fb-0e54-40ee-8284-d4918b86ce16" />
 
 **集計ルール（winner 用）**
 
@@ -280,32 +258,6 @@ python play_roent_porker_gpt5_v1-0-13.py
 
 * `logs/player_?.jsonl` — per-player observations
 
-### CSV by hole cards (AA / AKo / 88 / 72s …)
-
-Folder layout:
-
-```
-logs/
-  stats/
-    run_{yyyyMMddHHmmss}/
-      all_dealt.csv
-      flop_players.csv
-      winner.csv
-    cumulative/
-      all_dealt.csv
-      flop_players.csv
-      winner.csv
-    player_no/
-      p01/
-        all_dealt/      # by number of seats dealt in (2..10.csv)
-        flop_players/   # by number of players seeing the flop (2..10.csv)
-        winner/         # by number of seats dealt in (2..10.csv)
-      p02/
-        ...
-```
-
-CSV columns: `hand, wins, ties, losses, total, win_rate`
-
 **Winner counting rules**
 
 * If the **very first decision** is `fold`: **do not** count as a loss, and **do not** add to `total`.
@@ -366,6 +318,7 @@ Changes were made.
 ```
 
 ---
+
 
 
 
