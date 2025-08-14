@@ -33,16 +33,22 @@ Ver. 1.0.13 (roent_poker_gpt5_v1-0-13.py)
 
 ---
 
-## セットアップ
+## .exeファイルの実行動画
 
-* Python 3.x（標準ライブラリのみで動作）
-* クローン後、そのまま実行可能
 
 ---
 
-## 実行方法
+## Pythonファイルセットアップ
 
-### 学習実行
+* Python 3.x（標準ライブラリのみで動作）
+* CUIはクローン後、そのまま実行可能
+* GUIはdearpygui導入後、実行可能
+
+---
+
+## Pythonファイル実行方法
+
+### 学習実行 (CUI)
 
 ```bash
 python roent_poker_gpt5_v1-0-13.py
@@ -50,7 +56,7 @@ python roent_poker_gpt5_v1-0-13.py
 
 初回で `logs/` と `postai/` を作成。以降は過去の学習結果から再開します。**Player1 は直近勝者のポリシー**を優先ロード。
 
-### 対人プレイ
+### 対人プレイ (CUI)
 
 ```bash
 python play_roent_poker_gpt5_v1-0-13.py
@@ -82,11 +88,11 @@ python play_roent_poker_gpt5_v1-0-13.py
 
 <img width="901" height="301" alt="image" src="https://github.com/user-attachments/assets/60e42941-cd86-46c4-b45e-14936048c69c" />
 
-### JSON ログ（観測）
+### JSON ログ（全観測）
 
 * `logs/player_?.jsonl` … 各プレイヤー視点の状態スナップショット
 
-### ハンドの勝率ログ
+### ハンドの登場率と勝率ログ
 
 ![RoentRate](https://github.com/user-attachments/assets/5ce2e2b5-77b2-4707-8df6-f5352821d80d)
 
@@ -282,6 +288,7 @@ Changes were made.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
 ---
+
 
 
 
