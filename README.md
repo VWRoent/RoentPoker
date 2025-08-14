@@ -88,7 +88,7 @@ python play_roent_poker_gpt5_v1-0-13.py
 
 ### ハンドの勝率ログ
 
-<img width="696" height="698" alt="image" src="https://github.com/user-attachments/assets/b41643fb-0e54-40ee-8284-d4918b86ce16" />
+![RoentRate](https://github.com/user-attachments/assets/5ce2e2b5-77b2-4707-8df6-f5352821d80d)
 
 
 ---
@@ -282,6 +282,7 @@ Changes were made.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
 
 ---
+
 
 
 
