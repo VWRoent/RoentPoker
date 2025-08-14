@@ -1,4 +1,3 @@
-```markdown
 # Roent Porker
 Ver. 1.0.13
 roent_porker_gpt5_v1-0-13
@@ -26,19 +25,6 @@ It runs with **Python standard library only** (no external dependencies).
 - **`roent_porker_gpt5_v1-0-13.py`** — main learning engine  
 - **`play_roent_porker_gpt5_v1-0-13.py`** — minimal play script (e.g., 200 hands, Player1 = human)
 
-### Minimal play script
-```python
-from roent_porker_gpt5_v1-0-13 import Game
-
-if __name__ == "__main__":
-    Game(
-        num_players=6,
-        starting_stack=300,
-        sb=1, bb=3,
-        human_ids={1},          # Player 1 is human
-        max_rebuys=2
-    ).run(200)
-````
 
 ---
 
@@ -89,42 +75,11 @@ python play_roent_porker_gpt5_v1-0-13.py
 * `logs/end_preflop.log`, `end_flop.log`, `end_turn.log`, `end_river.log` — grouped by the ending street
 * `logs/allin.log` — hands with an all-in
 
+<img width="901" height="301" alt="image" src="https://github.com/user-attachments/assets/2ac6f904-ffe2-4efc-aebb-537f838c6082" />
+
 ### JSON snapshots
 
 * `logs/player_?.jsonl` — per-player observations
-
-### CSV by hole cards (AA / AKo / 88 / 72s …)
-
-Folder layout:
-
-```
-logs/
-  stats/
-    run_{yyyyMMddHHmmss}/
-      all_dealt.csv
-      flop_players.csv
-      winner.csv
-    cumulative/
-      all_dealt.csv
-      flop_players.csv
-      winner.csv
-    player_no/
-      p01/
-        all_dealt/      # by number of seats dealt in (2..10.csv)
-        flop_players/   # by number of players seeing the flop (2..10.csv)
-        winner/         # by number of seats dealt in (2..10.csv)
-      p02/
-        ...
-```
-
-CSV columns: `hand, wins, ties, losses, total, win_rate`
-
-**Winner counting rules**
-
-* If the **very first decision** is `fold`: **do not** count as a loss, and **do not** add to `total`.
-* If the player **ever participated** (e.g., call/raise) and **later folded**: count as a **loss** and increase `total`.
-
-What-if winners (no-folds / flop-no-more-folds) are also saved per-run and cumulatively.
 
 ---
 
@@ -159,7 +114,7 @@ Licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Inter
 
 ```
 This project builds on “Roent Porker” (CC BY-NC-SA 4.0).
-Copyright (c) 2025 Roent Shiba / 紫波レント.
+Copyright (c) 2025 Roent Shiba.
 Changes were made.
 ```
 
@@ -175,7 +130,5 @@ Changes were made.
 
 * Thanks to **ChatGPT 5 Thinking**.
   This project was created by **Roent Shiba (紫波レント)** with **no-code except for comment operations**, while relying on ChatGPT 5 Thinking for code generation and iterative refinement.
-
-```
 
 ---
